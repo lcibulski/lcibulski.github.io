@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Hugo Academic CV Theme
+title: Lena Cibulski
 # Website URL
 baseURL: 'https://example.com/'
 
@@ -17,6 +17,22 @@ hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
+############################
+## PAGE FORMATTING
+############################
+cascade:
+  - _target:
+      path: '/publications/**'
+    reading_time: false
+    pager: false
+  - _target:
+      path: '/talks/**'
+    reading_time: false
+    pager: false
+  - _target:
+      path: '/teaching/**'
+    reading_time: false
+    pager: false
 ############################
 ## ADVANCED
 ############################
@@ -38,7 +54,7 @@ outputs:
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
-  quality: 80
+  quality: 100
   anchor: smart
 timeout: 600000
 taxonomies:

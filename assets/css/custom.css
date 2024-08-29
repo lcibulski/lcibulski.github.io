@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+html {
+    font-size: 16px;
+    line-height: 1.65
+}
+
+@media screen and (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, .section-subheading {
+    /*font-family: montserrat, sans-serif;*/
+}
+
+.dark .section-subheading {
+    color: rgb(255,255,255);
+}
+
+p, .text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.prose h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.prose h2, .text-3xl {
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+:is(.dark #site-header.header) {
+    background-color: #0d3e61;
+}
+
+#page-bg {
+    background-color: #072337;
+}
+
+.nav-link {
+    font-weight: 400;
+}
+
+#nav-menu li:first-child a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hover-decoration-underline:hover {
+    text-decoration: underline;
+}
+
+/* About section */
+
+.resume-biography .avatar {
+    max-width: 270px;
+    max-height: 270px;
+}
+
+.avatar-wrapper {
+    width: 270px;
+    height: 270px;
+}
+
+.portrait-title {
+    margin-top: 20px;
+}
+
+.portrait-title h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin: 20px 0 10px;
+}
+
+.portrait-title h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark .portrait-title a:not(.btn) {
+    /*color: #a7d4f4;*/
+    color: rgb(191, 219, 254);
+}
+
+@media (min-width: 1024px) {
+    #section-resume-biography-3 {
+        height: calc(100vh - var(--navbar-height) + 93px); /*93px is the height of the wave*/
+        padding: 0;
+    }
+
+    #section-resume-biography-3 .container {
+        padding-bottom: 93px; /*93px is the height of the wave*/
+    }
+}
+
+@media (max-width: 1024px) {
+    #section-resume-biography-3 .container {
+        padding-bottom: calc(93px + 6rem); /*93px is the height of the wave*/
+    }
+}
+
+#section-resume-biography-3 .container, .resume-biography {
+    height: 100%;
+}
+
+.resume-biography .bio-text {
+    max-width: none;
+}
+
+ul.ul-interests li {
+    font-size: .9rem;
+}
+
+ul.ul-edu li .description p.institution {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.article-header-caption {
+    display: none;
+}
+
+@media (min-width: 1300px) {
+    #gull-image {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s all;
+    }
+}
+
+@media (max-width: 1300px) {
+    #gull-image {
+        position: fixed;
+        bottom: -50px;
+        left: -50px;
+        transition: 0.3s all;
+    }
+}
+
+@media (max-width: 1130px) {
+    #gull-image {
+        position: fixed;
+        bottom: -250px;
+        left: -130px;
+        transition: 1s all;
+    }
+}
+
+#archive-button {
+    background: #0d3e61;
+}
+
+/* Wave Animation */
+
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% {
+        transform: translate3d(85px,0,0);
+    }
+}
+
+
