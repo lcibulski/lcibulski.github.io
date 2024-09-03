@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6, .section-subheading {
     color: rgb(255,255,255);
 }
 
+.dark .home-section-bg {
+    background: #072337;
+}
+
 p, .text-justify {
     text-align: justify;
     text-justify: inter-word;
@@ -43,11 +47,11 @@ p, .text-justify {
 }
 
 :is(.dark #site-header.header) {
-    background-color: #0d3e61;
+    background: #0d3e61;
 }
 
-#page-bg {
-    background-color: #072337;
+:is(.dark #page-bg) {
+    background: #072337;
 }
 
 .nav-link {
@@ -163,6 +167,10 @@ ul.ul-edu li .description p.institution {
 }
 
 #archive-button {
+    background: rgb(219, 234, 254);
+}
+
+.dark #archive-button {
     background: #0d3e61;
 }
 

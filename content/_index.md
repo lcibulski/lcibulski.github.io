@@ -49,11 +49,10 @@ sections:
         If you would like to work with me, please reach out! 
         I am particularly interested in multidisciplinary discussions on human factors, methodological aspects of visualization research, and real-world applications.
     design:
+      css_class: "dark:dark"
       columns: '1'
       spacing:
         padding: ['6rem', '2rem', '6rem', '2rem']
-      background:
-        color: '#072337'
   - block: collection
     id: papers
     content:
@@ -63,10 +62,9 @@ sections:
           - publications
         featured_only: true
     design:
+      css_class: "dark:dark"
       spacing:
         padding: ['6rem', '2rem', '6rem', '2rem']
-      background:
-        color: '#072337'
       view: card
   - block: collection
     content:
@@ -78,8 +76,7 @@ sections:
       archive:
         text: See all publications
     design:
-      background:
-        color: '#072337'
+      css_class: "dark:dark"
       view: citation
   - block: collection
     id: talks
@@ -89,8 +86,7 @@ sections:
         folders:
           - talks
     design:
-      background:
-        color: '#072337'
+      css_class: "dark:dark"
       view: date-title-summary
   - block: collection
     id: teaching
@@ -102,6 +98,5 @@ sections:
     design:
       view: article-grid
       columns: 2
-      background:
-        color: '#072337'
+      css_class: "dark:dark"
 ---

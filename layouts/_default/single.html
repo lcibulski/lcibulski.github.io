@@ -70,10 +70,12 @@
 
 
       {{ $featured := partial "functions/get_featured_image.html" . }}
+      {{ $featuredDark := partial "functions/get_featured_image_dark.html" . }}
       {{/* Featured image layout */}}
       {{ if and $featured (not .Params.image.preview_only) }}
       {{/* Fit image within max size. */}}
       {{ $image := $featured }}
+      {{ $imageDark := $featuredDark }}
 
       {{/* Determine image placement. */}}
       {{ $placement := .Params.image.placement | default 1 }}{{/* Default to full column width. */}}
@@ -82,19 +84,26 @@
       {{ if eq $placement 2}}
       {{ $image_container = "container" }}
       {{ $image = $featured.Fit "1200x2500" }}
+      {{ $imageDark = $featuredDark.Fit "1200x2500" }}
       {{else if eq $placement 3}}
       {{ $image_container = "container-fluid" }}
       {{ $image := $featured.Fit "2560x2560" }}
+      {{ $imageDark := $featuredDark.Fit "2560x2560" }}
       {{else}}
       {{ $image_container = "article-container" }}
       {{ $image = $featured.Fit "2000x2500" }}
+      {{ $imageDark = $featuredDark.Fit "2000x2500" }}
       {{end}}
       {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+      {{ if ne $imageDark.MediaType.SubType "gif" }}{{ $imageDark = $imageDark.Process "webp" }}{{ end }}
       {{/* Featured image */}}
       <div class="article-header {{$image_container}} featured-image-wrapper mt-4 mb-16 mx-auto" style="max-width: {{$image.Width}}px; max-height: {{$image.Height}}px;">
         <div style="position: relative">
-          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ with $.Params.image.alt_text }}{{.}}{{ end }}" class="featured-image">
-          {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+          <picture>
+            <source srcset="{{ $imageDark.RelPermalink }}" media="(prefers-color-scheme: dark)">
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ with $.Params.image.alt_text }}{{.}}{{ end }}" class="featured-image">
+            {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+          </picture>
         </div>
       </div>
       {{end}}
