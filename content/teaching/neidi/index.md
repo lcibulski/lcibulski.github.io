@@ -16,6 +16,7 @@ The field of data visualization is dedicated to computational, visual, and inter
 In this way, it helps address analysis challenges in a variety of application areas like engineering or life sciences. 
 Data visualization as a craft is nourished by many disciplines and skills including cognition, statistics, creativity, scientific rigor, analytical and critical thinking. 
 Through hands-on projects and lecture sessions, we will dive deeper into some of these interesting facets.
+If a participant does not feel comfortable to communicate in German, the course can be held in English.
 
 ## Prerequisites
 
