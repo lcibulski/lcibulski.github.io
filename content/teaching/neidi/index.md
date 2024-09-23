@@ -1,5 +1,5 @@
 ---
-title: Recent Developments in Computer Science
+title: Visualization (Recent Developments in Computer Science)
 summary: 'We will explore recent advances in visualization research and applications, with an emphasis on science communication and didactics.'
 term: Course 23941, Master, Fall Term 2024
 tags:

@@ -135,10 +135,6 @@ ul.ul-edu li .description p.institution {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.article-header-caption {
-    display: none;
-}
-
 @media (min-width: 1300px) {
     #gull-image {
         position: fixed;
