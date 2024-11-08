@@ -96,7 +96,7 @@
   <div class="flex items-center md:mx-0">
     <div>
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
-    <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">
+    <div class="justify-content-center prose prose-slate dark:prose-invert">
       <div class="bio-text" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
       </div>
@@ -145,9 +145,18 @@
       </ul>
     </div>
     {{ end }}
-
   </div>
+
+    {{ with $person.vacancies }}
+    <div class="mt-6 dark:text-gray-300" style="width: 100%;">
+      <hr>
+      {{ range . }}
+      <span><b>Vacancy!</b> {{ .position }} in <a class="hover-decoration-underline text-primary-700 dark:text-primary-200" href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></span>
+      {{ end }}
+      <hr>
     </div>
+    {{ end }}
+  </div>
 
 </div>
 </div>
