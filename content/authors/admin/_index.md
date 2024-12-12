@@ -66,11 +66,6 @@ education:
   - area: BSc in Visual Computing
     institution: Otto-von-Guericke University Magdeburg, Germany
     year: 2016
-
-vacancies:
-  - position: Student assistant
-    title: Comparing Interfaces for Decision Preferences
-    url: /uploads/student-assistant.pdf
 ---
 
 # Lena Cibulski
