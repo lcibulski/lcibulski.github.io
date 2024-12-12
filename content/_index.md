@@ -42,12 +42,12 @@ sections:
       title: 'My Research'
       subtitle: ''
       text: |-
-        My research blends methodologies from computer science, design, and decision theory to address challenges that arise in a variety of application areas such as engineering or life sciences.
+        <p class="text-justify">My research blends methodologies from computer science, design, and decision theory to address challenges that arise in a variety of application areas such as engineering or life sciences.
         These include decision-making under conflicting objectives, parameter space exploration, domain knowledge exploitation, feature engineering for computational support, or analysis of cause-effect relationships.
-        I am also interested in how reflections on the practice of crafting visualizations for real-world problems inform the refinement of methods for visualization research.
-  
-        If you would like to work with me, please reach out! 
-        I am particularly interested in multidisciplinary discussions on human factors, methodological aspects of visualization research, and real-world applications.
+        I am also interested in how reflections on the practice of crafting visualizations for real-world problems inform the refinement of methods for visualization research.<p>
+
+        <p class="text-justify">If you would like to work with me, please reach out! 
+        I am particularly interested in multidisciplinary discussions on human factors, methodological aspects of visualization research, and real-world applications.</p>
     design:
       css_class: "dark:dark"
       columns: '1'

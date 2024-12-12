@@ -75,6 +75,6 @@ vacancies:
 
 # Lena Cibulski
 
-My research activities center around the design of visualization tools that assist people in making data-informed decisions. 
+<p class="text-justify">My research activities center around the design of visualization tools that assist people in making data-informed decisions. 
 I study how visualizations can amplify the often intangible, experiential knowledge underlying human reasoning with data
-and how this can benefit from computational support.
+and how this can benefit from computational support.</p>

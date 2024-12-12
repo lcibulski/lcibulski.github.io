@@ -1,3 +1,5 @@
+{{/* FEATURED PUBLICATIONS */}}
+
 {{ $item := .item }}
 
 {{ $link := $item.RelPermalink }}
@@ -14,9 +16,7 @@
       {{ $resourceDark := partial "functions/get_featured_image_dark.html" $item }}
       {{ $anchor := $item.Params.image.focal_point | default "Center" }}
       {{ $image := $resource.Fit (printf "655x655 %s" $anchor) }}
-      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
       {{ $imageDark := $resourceDark.Fit (printf "655x655 %s" $anchor) }}
-      {{ if ne $imageDark.MediaType.SubType "gif" }}{{ $imageDark = $imageDark.Process "webp" }}{{ end }}
         <picture>
           <source srcset="{{ $imageDark.RelPermalink }}" media="(prefers-color-scheme: dark)">
           <img class="h-48 w-full object-cover md:w-48 hover:scale-105 transition duration-300 cursor-pointer object-cover" loading="lazy" src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title | plainify }}">
@@ -25,14 +25,14 @@
     <div class="py-8 pl-8">
       <div class="uppercase tracking-wide text-md text-primary-700 dark:text-primary-200 font-semibold decoration-underline">{{ $item.Title }}</div>
       {{if $item.Params.authors}}
-        <span class="text-gray-500 dark:text-gray-400 text-sm">
+        <span class="dark:text-white opacity-50 text-sm">
           {{ partial "page_metadata_authors" $item }}
         </span>
       {{end}}
-      <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
+      <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white text-justify">
         {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape | chomp -}}
       </p>
-      <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">
+      <p class="mt-2 dark:text-white opacity-50 text-sm">
         {{- $item.Date | time.Format (site.Params.locale.date_format | default ":date_long") -}}
       </p>
     </div>

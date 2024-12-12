@@ -1,3 +1,5 @@
+{{/* PROFILE SECTION */}}
+
 {{/* Hugo Blox: Biography 3 */}}
 {{/* Documentation: https://hugoblox.com/blocks/ */}}
 {{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
@@ -138,7 +140,7 @@
           {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
           <div class="description">
             <p class="course">{{ .area }}{{ with .year }}, {{ . }}{{ end }}</p>
-            <p class="institution text-sm">{{ .institution }}</p>
+            <p class="institution text-sm text-white-semi">{{ .institution }}</p>
           </div>
         </li>
         {{ end }}

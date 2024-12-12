@@ -1,9 +1,26 @@
+{{/* RECENT PUBLICATIONS */}}
+
 {{ $item := .item }}
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  {{ partial "functions/get_icon" (dict "name" "document-text" "attributes" "style=\"height: 1em\" class='text-primary-700 dark:text-primary-200 inline-block'") }}
+<div class="pub-list-item view-citation flex flex-col md:flex-row gap-8 items-center" style="margin-bottom: 1rem">
+  {{/* partial "functions/get_icon" (dict "name" "document-text" "attributes" "style=\"height: 1em\" class='text-primary-700 dark:text-primary-200 inline-block'") */}}
 
+  {{ $resource := partial "functions/get_featured_image.html" $item }}
+  {{ $resourceDark := partial "functions/get_featured_image_dark.html" $item }}
+  {{ $anchor := $item.Params.image.focal_point | default "Center" }}
+  {{ $image := $resource.Fit "600x200" }}
+  {{ $imageDark := $resourceDark.Fit "600x200" }}
+  {{ if or (not (eq $resource nil)) (not (eq $resourceDark nil)) }}
+  <div class="w-[250px]" style="flex-grow: 0;flex-shrink: 0;">
+  <picture>
+    <source srcset="{{ $imageDark.RelPermalink }}" media="(prefers-color-scheme: dark)">
+    <img class="w-full object-cover md:w-48 hover:scale-105 transition duration-300 cursor-pointer object-cover" loading="lazy" src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title | plainify }}">
+  </picture>
+  </div>
+  {{ end }}
+
+  <div>
   {{/* APA Style */}}
   {{ if eq (site.Params.publications.citation_style | default "apa") "apa" }}
 
@@ -44,6 +61,26 @@
   </div>
   {{ end }}
 
+  {{/* Authors, title, and venue/year in separate lines */}}
+  {{ else if eq (site.Params.publications.citation_style) "lines"}}
+
+  <span class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" $item }}
+  </span>
+  <p><a href="{{ $item.RelPermalink }}" class="text-primary-700 dark:text-primary-200 hover-decoration-underline">{{ $item.Title }}</a></p>
+  {{ if $item.Params.publication_short }}
+  {{- $item.Params.publication_short | markdownify -}},
+  {{ else if $item.Params.publication }}
+  {{- $item.Params.publication | markdownify -}},
+  {{ end }}
+  {{- $item.Date.Format "2006" -}}
+
+  {{ if $has_attachments }}
+  <div class="flex space-x-3">
+    {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+  </div>
+  {{ end }}
+
   {{/* Custom Style */}}
   {{ else }}
 
@@ -65,4 +102,5 @@
   {{ end }}
 
   {{ end }}
+  </div>
 </div>

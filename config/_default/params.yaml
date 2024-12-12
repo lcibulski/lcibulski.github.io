@@ -58,4 +58,4 @@ features:
 
 # "mla" or "apa" or "custom"
 publications:
-  citation_style: "custom"
+  citation_style: "lines"

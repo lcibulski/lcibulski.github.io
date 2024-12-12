@@ -25,13 +25,13 @@
 {{ end }}
 
 {{ with $pdf }}
-<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}}" href="{{ . }}" target="_blank" rel="noopener">
+<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}} hover-decoration-underline" href="{{ . }}" target="_blank" rel="noopener">
   {{ i18n "btn_pdf" }}
 </a>
 {{ end }}
 {{ $resource := $page.Resources.GetMatch "cite.bib" }}
 {{ with $resource }}
-<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}}" href="{{ .RelPermalink }}" target="_blank" data-filename="{{ .RelPermalink }}">
+<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}} hover-decoration-underline" href="{{ .RelPermalink }}" target="_blank" data-filename="{{ .RelPermalink }}">
   {{ i18n "btn_cite" }}
 </a>
 {{ end }}
@@ -42,7 +42,7 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}} hover-decoration-underline" href="{{ $link }}" target="_blank" rel="noopener">
   {{ i18n "btn_code" }}
 </a>
 {{ end }}
@@ -115,7 +115,7 @@
   {{ else }}
     {{ $link = . | relURL }}
   {{ end }}
-<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}}" href="{{ $link }}" target="_blank" rel="noopener">
+<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}} hover-decoration-underline" href="{{ $link }}" target="_blank" rel="noopener">
   {{ i18n "btn_video" }}
 </a>
 {{ end }}
@@ -131,7 +131,7 @@
 </a>
 {{ end }}
 {{ with $page.Params.doi }}
-<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}}" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
+<a class="hb-attachment-link {{ if $is_list }}hb-attachment-small{{else}}hb-attachment-large{{end}} hover-decoration-underline" href="https://doi.org/{{ . }}" target="_blank" rel="noopener">
   DOI
 </a>
 {{ end }}
