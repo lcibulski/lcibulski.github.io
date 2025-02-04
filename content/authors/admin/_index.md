@@ -66,6 +66,12 @@ education:
   - area: BSc in Visual Computing
     institution: Otto-von-Guericke University Magdeburg, Germany
     year: 2016
+
+news:
+  - text: 'A heartfelt welcome to Begüm Köse who will support my research as a student assistant!'
+    date: Feb 3, 2025
+  - text: 'I am honored to receive an Honorable Mention at the <a class="hover-decoration-underline text-primary-700 dark:text-primary-200" href="https://www.vrvis.at/award" target="_blank" rel="noopener">VRVis Visual Computing Award 2025</a>!'
+    date: Jan 30, 2025
 ---
 
 # Lena Cibulski

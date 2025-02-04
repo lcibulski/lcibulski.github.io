@@ -20,7 +20,7 @@
 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 {{- $gull_image := resources.Get "media/gull-cropped-half.png" -}}
 
-<div class="container px-3 mx-auto">
+<div class="container px-3 mx-auto" style="padding-top: 1rem">
 <div class="resume-biography px-3 flex flex-col lg:flex-row gap-8">
   <div class="flex justify-center items-center md:mx-0">
 
@@ -178,5 +178,17 @@
   </svg>
 </div>
 <!--Waves end-->
+<!-- News box -->
+{{ with $person.news }}
+<div class="news flex flex-col">
+  {{ range . }}
+  <div class="news-item">
+    <small class="dark:text-white opacity-50">{{ .date }}</small>
+    <p class="dark:text-gray-300">{{ .text | safeHTML}}</p>
+  </div>
+  {{ end }}
+</div>
+{{ end }}
+<!-- News box end -->
 <img id="gull-image" src="{{ $gull_image.RelPermalink }}" width="130" height="250">
 </div>
