@@ -21,7 +21,7 @@ Through lecture sessions and exercises, we will dive deeper into these component
 ## Prerequisites
 
 There are no enforced prerequisites for this course.
-However, a general interest in data visualization and computational approaches are recommended.
+However, a general interest in data visualization and computational approaches is recommended.
 
 ## Course Mechanics
 
