@@ -1,13 +1,16 @@
 ---
 title: Visualization and Education (Recent Developments in Computer Science)
-summary: 'We will explore recent advances in visualization research and applications, with an emphasis on sustainable development and didactics.'
+summary: 'We explore recent advances in visualization research and applications, with an emphasis on sustainable development and didactics.'
 term: Course 23941, Master, Spring Term 2025
+date: '2025-04-01'
 tags: 
   - Lecture
   - Project
 image:
   caption: ''
 ---
+
+[Course 23941](https://lsf.uni-rostock.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=171572&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung)
 
 ## Course Description
 

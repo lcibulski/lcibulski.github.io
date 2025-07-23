@@ -1,12 +1,15 @@
 ---
 title: Interactive Visual Data Analysis (Data Science)
-summary: 'We will explore the principles and practice of designing and using interactive visualizations to answer questions or make decisions with data.'
+summary: 'We explore the principles and practice of designing and using interactive visualizations to answer questions or make decisions with data.'
 term: Course 23449, Bachelor + Master, Fall Term 2024
+date: '2024-10-01'
 tags:
   - Exercise
 image:
   caption: 'Christian Tominski and Heidrun Schumann. "Interactive Visual Data Analysis". AK Peters Visualization Series, CRC Press, 2020.'
 ---
+
+[Course 23449](https://lsf.uni-rostock.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=166640&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung)
 
 ## Course Description
 

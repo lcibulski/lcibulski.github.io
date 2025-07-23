@@ -1,12 +1,15 @@
 ---
 title: Visual Analytics (Current Topics in Visual Computing)
-summary: 'We will explore the synthesis of visualization, interaction, and computation to facilitate insight generation from large and complex data.'
+summary: 'We explore the synthesis of visualization, interaction, and computation to facilitate insight generation from large and complex data.'
 term: Course 23863, Master, Fall Term 2024
+date: '2024-10-01'
 tags:
   - Exercise
 image:
   caption: 'Christian Tominski and Heidrun Schumann. "Interactive Visual Data Analysis". AK Peters Visualization Series, CRC Press, 2020.'
 ---
+
+[Course 23863](https://lsf.uni-rostock.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=166638&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung)
 
 ## Course Description
 

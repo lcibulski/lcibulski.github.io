@@ -1,12 +1,15 @@
 ---
 title: Visualization
-summary: 'We will explore the principles and practice of volume visualization, flow visualization, and information visualization.'
+summary: 'We explore the principles and practice of volume visualization, flow visualization, and information visualization.'
 term: Course 23036, Master, Spring Term 2025
+date: '2025-04-01'
 tags:
   - Exercise
 image:
   caption: ''
 ---
+
+[Course 23036](https://lsf.uni-rostock.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=171352&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&noDBAction=y&init=y)
 
 ## Prerequisites
 

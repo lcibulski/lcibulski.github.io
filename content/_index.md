@@ -92,9 +92,12 @@ sections:
     id: teaching
     content:
       title: Teaching
+      count: 2
       filters:
         folders:
           - teaching
+      archive:
+        text: See all courses
     design:
       view: article-grid
       columns: 2
