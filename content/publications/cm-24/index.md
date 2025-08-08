@@ -38,7 +38,7 @@ url_pdf: 'https://diglib.eg.org/bitstreams/5cd897e1-954e-47eb-9a18-2f2a0b2af246/
 # url_project: ''
 # url_slides: ''
 # url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_video: 'https://youtube.com'
+url_video: 'Fast-Forward-Video.mp4'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

@@ -26,5 +26,5 @@ url_pdf: 'https://hal.science/hal-03775272/document'
 # url_project: ''
 # url_slides: ''
 # url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_video: 'https://youtube.com'
+url_video: 'w-visguides-1006_Cibulski_Presentation.mp4'
 ---

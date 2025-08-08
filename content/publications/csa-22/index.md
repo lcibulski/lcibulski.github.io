@@ -25,5 +25,5 @@ url_pdf: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9729397'
 # url_project: ''
 # url_slides: ''
 # url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_video: 'https://ieeexplore.ieee.org/document/9792437/media#media'
+url_video: 'https://www.youtube.com/watch?v=2XeOxMgCorE'
 ---

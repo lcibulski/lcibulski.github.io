@@ -26,5 +26,5 @@ url_pdf: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9792437'
 # url_project: ''
 # url_slides: ''
 # url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://ieeexplore.ieee.org/document/9792437/media#media'
+url_video: 'TVCG-2021-Final-Demo-Video.mp4'
 ---

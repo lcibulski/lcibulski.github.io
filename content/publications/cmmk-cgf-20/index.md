@@ -23,6 +23,7 @@ featured: true
 
 url_pdf: 'https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.13990'
 url_code: 'https://github.com/fraunhofer-igd-iva/pavedjs'
+url_demo: 'https://paved.iva.igd.fraunhofer.de/'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
 # url_project: ''
