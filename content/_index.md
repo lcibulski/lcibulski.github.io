@@ -92,7 +92,7 @@ sections:
     id: teaching
     content:
       title: Teaching
-      count: 2
+      count: 3
       filters:
         folders:
           - teaching
@@ -102,9 +102,7 @@ sections:
       view: article-grid
       columns: 2
       css_class: "dark:dark"
-    design:
-      css_class: "dark:dark"
-      columns: '1'
       spacing:
         padding: ['6rem', '2rem', '6rem', '2rem']
+      
 ---
