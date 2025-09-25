@@ -8,9 +8,9 @@ authors:
 - Stefan Bruckner
 
 date: '2025-11-07'
-# doi: '10.2312/eurova.20221072'
+doi: '10.2312/vcbm.20251252'
 
-to_be_published: true
+to_be_published: false
 
 publishDate: '2024-07-22T13:47:42.421664Z'
 
@@ -28,12 +28,12 @@ trafficking on the efficiency of signal transmission within the cell. We embed t
 a simultaneous analysis of model parameters and temporal outputs. A usage scenario illustrates how our approach assists with
 typical tasks such as assessing the plausibility of temporal outputs or examining their sensitivity across model configurations.'
 
-# url_pdf: 'https://arxiv.org/pdf/2507.18428'
+url_pdf: 'https://diglib.eg.org/server/api/core/bitstreams/a2300a70-f507-4787-b6ef-15c0120bafdf/content'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
 # url_project: ''
 # url_slides: ''
 # url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_video: 'https://youtube.com'
+url_video: 'Video.mp4'
 ---
