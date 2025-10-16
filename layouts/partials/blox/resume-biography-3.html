@@ -182,10 +182,12 @@
 {{ with $person.news }}
 <div class="news flex flex-col">
   {{ range . }}
-  <div class="news-item">
-    <small class="dark:text-white opacity-50">{{ .date }}</small>
-    <p class="dark:text-gray-300">{{ .text | safeHTML}}</p>
-  </div>
+    {{ if .featured }}
+      <div class="news-item">
+        <small class="dark:text-white opacity-50">{{ .date }}</small>
+        <p class="dark:text-gray-300">{{ .text | safeHTML}}</p>
+      </div>
+    {{ end }}
   {{ end }}
 </div>
 {{ end }}
