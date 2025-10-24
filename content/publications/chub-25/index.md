@@ -28,6 +28,8 @@ trafficking on the efficiency of signal transmission within the cell. We embed t
 a simultaneous analysis of model parameters and temporal outputs. A usage scenario illustrates how our approach assists with
 typical tasks such as assessing the plausibility of temporal outputs or examining their sensitivity across model configurations.'
 
+award: "Best Short Paper Award EG VCBM 2025"
+
 url_pdf: 'https://diglib.eg.org/server/api/core/bitstreams/a2300a70-f507-4787-b6ef-15c0120bafdf/content'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'

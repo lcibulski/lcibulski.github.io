@@ -247,4 +247,8 @@ ul.ul-interests li {
     }
 }
 
+.hb-attachment-link:first-child {
+    margin-right: 0;
+}
+
 

@@ -68,16 +68,26 @@
     {{ partial "page_metadata_authors" $item }}
   </span>
   <p><a href="{{ $item.RelPermalink }}" class="text-primary-700 dark:text-primary-200 hover-decoration-underline">{{ $item.Title }}</a></p>
-  {{ if $item.Params.publication_short }}
-  {{- $item.Params.publication_short | markdownify -}},
-  {{ else if $item.Params.publication }}
-  {{- $item.Params.publication | markdownify -}},
-  {{ end }}
-  {{ if $item.Params.to_be_published }}
-  {{- "*to be published*" | markdownify -}},
-  {{ end }}
-  {{- $item.Date.Format "2006" -}}
-
+  <p>
+    {{ if $item.Params.publication_short }}
+    {{- $item.Params.publication_short | markdownify -}},
+    {{ else if $item.Params.publication }}
+    {{- $item.Params.publication | markdownify -}},
+    {{ end }}
+    {{ if $item.Params.to_be_published }}
+    {{- "*to be published*" | markdownify -}},
+    {{ end }}
+    {{- $item.Date.Format "2006" -}}
+  </p>
+  <p class="flex items-start">
+    {{ if $item.Params.award }}
+    {{ partial "functions/get_icon" (dict "name" "trophy" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
+    {{- $item.Params.award | markdownify -}}
+    {{ else if $item.Params.honorable_mention }}
+    {{ partial "functions/get_icon" (dict "name" "star" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
+    {{- $item.Params.honorable_mention | markdownify -}}
+    {{ end }}
+  </p>
 
   {{ if $has_attachments }}
   <div class="flex space-x-3">
