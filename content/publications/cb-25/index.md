@@ -28,5 +28,5 @@ url_pdf: 'https://arxiv.org/pdf/2507.18428'
 # url_project: ''
 # url_slides: ''
 # url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_video: 'https://youtube.com'
+url_video: 'https://youtu.be/LzapyJvE_UY?t=1601'
 ---

@@ -68,12 +68,15 @@ education:
     year: 2016
 
 news:
+  - text: '<a class="hover-decoration-underline text-primary-700 dark:text-primary-200" href="https://ieeevis.org/year/2025/info/awards/best-paper-awards#short-papers" target="_blank" rel="noopener">Best Short Paper Honorable Mention</a> at IEEE VIS! I also contributed as a <a class="hover-decoration-underline text-primary-700 dark:text-primary-200" href="https://ieeevis.org/year/2025/info/program/panels#industry-meets-research-future-needs-and-opportunities-for-visual-analytics-in-industrial-manufacturing" target="_blank" rel="noopener">panelist</a> and session chair!'
+    date: November 5, 2025
+    featured: true  
   - text: 'Happy about the <a class="hover-decoration-underline text-primary-700 dark:text-primary-200" href="https://conferences.eg.org/vcbm2025/awards/" target="_blank" rel="noopener">Best Short Paper Award</a> at VCBM!'
     date: October 2, 2025
     featured: true
   - text: 'I am proud to be <a class="hover-decoration-underline text-primary-700 dark:text-primary-200" href="https://www.freunde.tu-darmstadt.de/fuerdietudarmstadt/preiseverleihen/preistraeger_6/preistraeger_36.en.jsp" target="_blank" rel="noopener">awarded for the best dissertation</a> in Computer Science at TU Darmstadt in 2024!'
     date: May 27, 2025
-    featured: true
+    featured: false
   - text: 'A heartfelt welcome to Begüm Köse who will support my research as a student assistant!'
     date: Feb 3, 2025
     featured: false
