@@ -92,7 +92,7 @@ sections:
     id: teaching
     content:
       title: Teaching
-      count: 2
+      count: 3
       filters:
         folders:
           - teaching
