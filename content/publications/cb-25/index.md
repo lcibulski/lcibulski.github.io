@@ -6,9 +6,9 @@ authors:
 - Stefan Bruckner
 
 date: '2025-11-05'
-# doi: '10.2312/eurova.20221072'
+doi: '10.1109/VIS60296.2025.00059'
 
-to_be_published: true
+to_be_published: false
 
 publishDate: '2024-07-22T13:47:42.421664Z'
 
@@ -21,7 +21,7 @@ abstract: 'Decision-making is a central yet under-defined goal in visualization 
 
 honorable_mention: "Best Short Paper Honorable Mention IEEE VIS 2025"
 
-url_pdf: 'https://arxiv.org/pdf/2507.18428'
+url_pdf: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11298819'
 # url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
